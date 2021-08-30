@@ -1,0 +1,14 @@
+
+<!-- <label for="singleFile">Upload file</label>
+<br>
+<input id="singleFile" type="file" [fileUploadInputFor]= "fileUploadQueue" />
+<br>
+
+
+<mat-file-upload-queue #fileUploadQueue
+    [fileAlias]="'file'"
+    [httpUrl]="'http://127.0.0.1:5000/upload_file'">
+
+    <mat-file-upload [file]="file" [id]="i" *ngFor="let file of fileUploadQueue.files; let i = index"></mat-file-upload>
+</mat-file-upload-queue> -->
+<input type="file"  (change)="addFile($event.target.files)"/>
