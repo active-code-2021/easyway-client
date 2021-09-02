@@ -1,0 +1,33 @@
+<form [formGroup]="insertOrder" (ngSubmit)="addOrder()">
+
+    <mat-form-field appearance="fill">
+      <mat-label>first name</mat-label>
+      <input matInput formControlName="firstName">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+      <mat-label>last name</mat-label>
+      <input matInput formControlName="lastName">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+      <mat-label>phone number</mat-label>
+      <input matInput formControlName="phoneNumber">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+      <mat-label>email</mat-label>
+      <input matInput placeholder="pat@example.com" formControlName="email" required>
+      <mat-error *ngIf="insertOrder.get('email').invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <br>
+    <app-add-address></app-add-address>
+   <!--  <br>
+     <mat-form-field appearance="fill">
+        <mat-label>address</mat-label>
+       <app-add-address></app-add-address>
+      </mat-form-field>  -->
+    <!-- <input type="submit" value="הרשם" /> -->
+    <!-- </mat-form-field>  -->
+    <input type="submit" value="save">
+  </form>
