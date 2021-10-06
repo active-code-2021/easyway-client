@@ -8,8 +8,8 @@ import { Order } from '../classes/order';
 })
 export class OrderService {
 
-  constructor(private http:HttpClient) { }
-  addOrder(order:Order):Observable<boolean>{
-return this.http.post<boolean>(`https://localhost:44339/Order`,order);
+  constructor(private http: HttpClient) { }
+  addOrder(order: Order): Observable<boolean> {
+    return this.http.post<boolean>(`https://localhost:44339/Api/Customers`, order);
   }
 }
