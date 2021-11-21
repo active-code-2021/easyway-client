@@ -121,6 +121,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "greenWord"
+    }
+  },
+  "defaultProject": "greenWord",
+  "cli": {
+    "analytics": "b2318652-fc73-454b-a4f0-ae8fe4d710de"
+  }
 }

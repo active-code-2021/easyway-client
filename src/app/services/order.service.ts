@@ -1,15 +1,16 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { Order } from '../classes/order';
+import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
+import { Observable } from "rxjs";
+import { environment } from "src/environments/environment";
+import { Order } from "../classes/order";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class OrderService {
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
   addOrder(order: Order): Observable<boolean> {
-    return this.http.post<boolean>(`https://localhost:44339/Api/Customers`, order);
+    debugger;
+    return this.http.post<boolean>(`${environment.apiUrl}/Order`, order);
   }
 }

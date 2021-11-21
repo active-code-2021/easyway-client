@@ -6,42 +6,41 @@
 <form [formGroup]="insertOrder" (ngSubmit)="addOrder()">
 
   <mat-form-field appearance="fill">
-    <mat-label>first name</mat-label>
-    <input matInput formControlName="firstName">
+    <mat-label>name</mat-label >
+    <input matInput formControlName="name" >
+    <mat-error *ngIf="insertOrder.get('name').hasError('pattern')">השם צריך להכיל רק אותיות</mat-error>
+    <mat-error *ngIf="insertOrder.get('name').hasError('required')"> שדה חובה </mat-error>
+    
+
   </mat-form-field>
+ 
   <br>
-  <mat-form-field appearance="fill">
-    <mat-label>last name</mat-label>
-    <input matInput formControlName="lastName">
-  </mat-form-field>
   <br>
   <mat-form-field appearance="fill">
     <mat-label>phone</mat-label>
-    <input matInput formControlName="phone">
+    <input matInput formControlName="phone" required> 
+    <mat-error *ngIf="insertOrder.get('phone').hasError('required')"> שדה חובה </mat-error>
+    <mat-error *ngIf="insertOrder.get('phone').hasError('pattern')">מספר לא חוקי  </mat-error>
   </mat-form-field>
+ 
   <br>
   <mat-form-field appearance="fill">
     <mat-label>email</mat-label>
-    <input matInput placeholder="pat@example.com" formControlName="email" required>
-    <mat-error *ngIf="insertOrder.get('email').invalid">{{getErrorMessage()}}</mat-error>
+    <input matInput placeholder="pat@example.com" formControlName="email" >
+    <mat-error *ngIf="insertOrder.get('email').hasError('required')"> שדה חובה </mat-error>
+    <mat-error *ngIf="insertOrder.get('email').hasError('email')">אימייל לא חוקי  </mat-error>
+
   </mat-form-field>
   <br>
-
-
-
-
-
   <mat-form-field>
     <mat-label>Address </mat-label>
-    <input matInput matGoogleMapsAutocomplete formControlName="address"
+    <input matInput matGoogleMapsAutocomplete formControlName="address" 
       (onAutocompleteSelected)="onAutocompleteSelected($event)" (onLocationSelected)="onLocationSelected($event)">
   </mat-form-field>
 
 
 
   <br>
-
-
 
   <!--  <br>
      <mat-form-field appearance="fill">

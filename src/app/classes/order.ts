@@ -1,15 +1,23 @@
 export class Order {
-    constructor(firstName: string, lastName: string, mail: string, phone: string
-        , orderId: number) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    //אולי בלי address
+    constructor(name: string, mail: string, phone: string
+        , orderId: number,address:object,addressLon:number,
+        addressLat:number) {
+        this.name = name;
+        
         this.phone = phone;
         this.orderId = orderId;
         this.mail = mail;
+        this.address= address;
+        this.addressLat= addressLat;
+        this.addressLon= addressLon;
     }
-    firstName: string;
-    lastName: string;
+    name: string;
+ 
     mail: string;
     phone: string;
-    orderId: number
+    orderId: number;
+    address:object
+    addressLon:number;
+    addressLat:number;
 }
