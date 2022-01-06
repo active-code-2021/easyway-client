@@ -57,11 +57,6 @@ export class AddOrderComponent implements OnInit {
       .valueChanges.subscribe((value) => console.log("value changed", value));
   }  
   addOrder(): void {
-    //addressLon = { coordinates: this.coordinates };
-    debugger;
-    // const addressLon = { coordinates: this.longitude };
-    // const addressLat = { coordinates: this.latitude };
-
     const addressLon = this.longitude ;
     const addressLat =  this.latitude ;
     console.log({ ...this.insertOrder.value, addressLon,addressLat });

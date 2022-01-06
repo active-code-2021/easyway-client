@@ -1,5 +1,24 @@
-form{ margin-left: 45%;
-margin-top: 0%;}
+form{ margin-left: 20%;
+margin-top: 0.5%;}
 agm-map {
     height: 300px;
+    width:50%;
+    margin-top: -3%;
     }
+#addOrder{
+    font-size:7vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    /* margin-left: 65%;  */
+    display: flex;
+    flex: 1 auto;
+    color: #14eb1b;
+    position: absolute;
+    top: 0;
+    right: 20%;
+    padding-top: 10px;
+    /* margin-top: 2%; */
+}
+
+.map ::ng-deep.agm-map-container-inner{
+    width:unset
+}

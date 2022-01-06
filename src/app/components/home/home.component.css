@@ -1,0 +1,27 @@
+.active{
+    color: black;
+    background-color: rgb(216, 210, 210);
+    font-size: larger;
+    font-family: monospace;
+}
+a{ 
+color: #14eb1b;
+margin-right: 2.5em;
+direction: rtl;
+
+}
+
+
+mat-toolbar {
+    background: #14eb1b;
+    color: rgba(0,0,0,.87);
+}
+#addOrder{
+    margin-left:4%;
+}
+#routing{
+    margin-left:4%;
+}
+#deliverymenList{
+    margin-left:220%
+}

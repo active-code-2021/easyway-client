@@ -3,4 +3,44 @@
     font-size:7vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     margin-left: 45%; 
+    color: #14eb1b;
+}
+/* .image{
+    background-image:url("C:\Users\אילת\Desktop\אקטיב קוד\easyWay-client\images\7.PNG"); 
+    height: 80%;
+    width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left:50%;
+z-index:-1 ;
+background-position: top center;
+position: absolute;
+} */
+
+.image{
+  width:50%;
+  padding-top: 10px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.image img{
+  width: 80%;
+  margin-left: 10%;
+}
+
+.wrap-app{
+  display:flex;
+  flex-direction: column;
+}
+
+.body{
+  display:flex;
+  position: relative;
+}
+
+.wrap-outer-outlet{
+  width:50%;
 }

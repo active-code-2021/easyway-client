@@ -1,0 +1,19 @@
+
+table {
+    width: 50%;
+    margin-top: 2%;
+  }
+  .activebutton{
+    margin-right: 8px;
+    margin-top: 2%;
+  }
+  .button{
+      margin-right: 5%;
+      margin-left: 20%;
+      margin-top:-2.3%;
+  }
+  button{
+    background-color:#14eb1b;
+    color: white;
+    font-size: 150%;
+  }
