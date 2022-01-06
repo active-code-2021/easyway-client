@@ -20,14 +20,18 @@ import { AddOrderComponent } from './components/add-order/add-order.component';
 //import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
-
+import {MatTableModule} from '@angular/material/table';
+import { HomeComponent } from './components/home/home.component';
+import { DeliverymenListComponent } from './components/deliverymen-list/deliverymen-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     //UploadFileComponent,
     AddAddressComponent,
-    AddOrderComponent
+    AddOrderComponent,
+    HomeComponent,
+     DeliverymenListComponent
   ],
   imports: [
     FormsModule,
@@ -42,6 +46,7 @@ import { MatInputModule } from '@angular/material/input';
     MatFormFieldModule,
     MatToolbarModule,
     MatGoogleMapsAutocompleteModule,
+    MatTableModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBFVQTB-gOzy3rhID9yuz8ejN_QL70qCqQ',
       libraries: ['places']

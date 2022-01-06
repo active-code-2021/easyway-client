@@ -8,13 +8,13 @@ import { DeliveryManService } from 'src/app/services/delivery-man.service'
 })
 export class DeliverymenListComponent implements OnInit {
 deliverymenList:DeliveryMan[]=[];
-deliverymenListActive:DeliveryMan[]=[];
+deliverymenListActive1:DeliveryMan[]=[];
 displayedColumns: string[] = ['firstName', 'lastName', 'phone', 'active'];
   constructor(private DeliveryManService:DeliveryManService) { }
 
   ngOnInit(): void {
    
-    this.DeliveryManService.getDeliveryMen().subscribe(res=>{this.deliverymenListActive=res},err=>{console.log("not good :(")})
+    this.DeliveryManService.getDeliveryMen().subscribe(res=>{this.deliverymenListActive1=res},err=>{console.log("not good :(")})
 
   }
    getDeliveryManListActive(){
@@ -23,12 +23,12 @@ displayedColumns: string[] = ['firstName', 'lastName', 'phone', 'active'];
     this.DeliveryManService.getDeliveryMen().subscribe(res => {
       this.deliverymenList=res;
       debugger
-      this.deliverymenListActive= this.deliverymenList.filter(delivery => delivery.active)
-        console.log(this.deliverymenListActive)
+      this.deliverymenListActive1= this.deliverymenList.filter(delivery => delivery.active)
+        console.log(this.deliverymenListActive1)
     },err=>{console.log("not good :(")});
      
 }
 getDeliveryManList(){
-this.DeliveryManService.getDeliveryMen().subscribe(res=>{this.deliverymenListActive=res},err=>{console.log("not good :(")})
+this.DeliveryManService.getDeliveryMen().subscribe(res=>{this.deliverymenListActive1=res},err=>{console.log("not good :(")})
 }
 }

@@ -5,11 +5,11 @@ import { DeliverymenListComponent } from './components/deliverymen-list/delivery
 import { SecretaryComponent } from './components/secretary/secretary.component';
 
 const routes: Routes = [
-  // {
-  //   path: 'deliverymenList',
-  //   component: DeliverymenListComponent,
+  {
+    path: 'deliverymenList',
+    component: DeliverymenListComponent,
 
-  // },
+  },
  { 
    path:'routing',
    component:SecretaryComponent,
