@@ -20,6 +20,7 @@ export class SecretaryService {
     return doneOrder;
   }
   getRoute():Observable<string[]> {
+    debugger;
     var route=this.http.get<string[]>(`${environment.apiUrl}/Order/Route`);
     console.log(route);
     return route;

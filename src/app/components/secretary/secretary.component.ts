@@ -16,11 +16,12 @@ route:string[]=[];
   ngOnInit(): void {
 // this._secretaryService.getOrders().subscribe(res=>this.orders = res);
 // this.countOrders=this.orders.filter(order=>order.don)
-debugger;
 this._secretaryService.getDoneOrders().subscribe(res=>{this.countOrders = res},err=>{console.log("not good :(")});
 //   }
 }
 getRoute(){
+  debugger;
   this._secretaryService.getRoute().subscribe(res=>{this.route=res},err=>{console.log("not good :(")})
+  console.log(this.route);
 }
 }

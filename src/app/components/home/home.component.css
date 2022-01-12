@@ -5,7 +5,7 @@
     font-family: monospace;
 }
 a{ 
-color: #14eb1b;
+color:deepskyblue;
 margin-right: 2.5em;
 direction: rtl;
 
@@ -13,8 +13,9 @@ direction: rtl;
 
 
 mat-toolbar {
-    background: #14eb1b;
-    color: rgba(0,0,0,.87);
+   /* background: #51fcfc; */
+   background:deepskyblue;
+    color: rgba(0, 0, 0, 0.87);
 }
 #addOrder{
     margin-left:4%;

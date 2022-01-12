@@ -1,4 +1,5 @@
 <div id="body">
+  <div class="buttons">
 <div class="activebutton" (click)="getDeliveryManListActive()">
   <button mat-raised-button>active deliverymen list</button>
 </div>
@@ -6,6 +7,7 @@
 <div class="button" (click)="getDeliveryManList()">
     <button mat-raised-button>deliverymen list</button>
   </div>
+</div>
 <table mat-table [dataSource]="deliverymenListActive1" class="mat-elevation-z8" >
 
     <!--- Note that these columns can be defined in any order.

@@ -3,7 +3,7 @@
     font-size:7vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     margin-left: 45%; 
-    color: #14eb1b;
+    color: deepskyblue;
 }
 /* .image{
     background-image:url("C:\Users\אילת\Desktop\אקטיב קוד\easyWay-client\images\7.PNG"); 
@@ -19,17 +19,30 @@ position: absolute;
 } */
 
 .image{
-  width:100%;
+  background-image: url("../assets/images/7.PNG");
+  /* background-repeat: no-repeat;
+  width:100%; */
   padding-top: 10px;
   display:flex;
   align-items:center;
   justify-content: center;
+  height: 95%;
+  width: 50%;
+  top:2%;
+  left:50%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+/* margin-left:50%; */
+z-index:-1 ;
+background-position: top center;
+position: absolute;
 }
-
-.image img{
-  width: 93%;
-  margin-left: 45%;
-}
+/* 
+.image {
+  width: 40%;
+  
+} */
 
 .wrap-app{
   display:flex;
@@ -43,4 +56,5 @@ position: absolute;
 
 .wrap-outer-outlet{
   width:50%;
+ 
 }
